@@ -1,0 +1,32 @@
+<md-dialog>
+    <form>
+        <md-toolbar>
+            <h4 layout="row" layout-align="center center"> ENTER VIDEO DETAILS</h4>
+        </md-toolbar>
+        <md-dialog-content>
+            <div layout="column">
+                <md-input-container layout="row">
+                    <label>Title</label>
+                    <input ng-model="videoDetail.title" required>
+                </md-input-container>
+                <md-input-container layout="row">
+                    <label>Youtube Id</label>
+                    <input ng-model="videoDetail.id" required>
+                </md-input-container>
+                <md-input-container layout="row">
+                    <label>Start Time</label>
+                    <input ng-model="videoDetail.start">
+                </md-input-container>
+                <md-input-container layout="row">
+                    <label>End Time</label>
+                    <input ng-model="videoDetail.end">
+                </md-input-container>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions>
+            <md-button ng-click="addVideo()">
+                ADD
+            </md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>
